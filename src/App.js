@@ -1,23 +1,45 @@
 import logo from './logo.svg';
+import { PlusOutlined } from '@ant-design/icons';
+import {
+  Button,
+  DatePicker,
+  Form,
+  Input,
+} from 'antd';
 import './App.css';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <>
+        <Form
+          labelCol={{
+            span: 4,
+          }}
+          wrapperCol={{
+            span: 14,
+          }}
+          layout="horizontal"
+
+          style={{
+            maxWidth: 600,
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <Form.Item label="DatePicker">
+            <DatePicker />
+          </Form.Item>
+
+          <Form.Item label="Input">
+            <Input />
+          </Form.Item>
+
+          <Form.Item label="Button">
+            <Button>Button</Button>
+          </Form.Item>
+        </Form>
+      </>
+
     </div>
   );
 }
