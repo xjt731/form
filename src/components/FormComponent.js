@@ -3,8 +3,8 @@ import { useState } from 'react';
 import  DatePickerComponent from './DatePickerComponent';
 import  AutoCompleteComponent from './AutoCompleteComponent';
 
-export default function FormComponent(){
-    // text hints used for AutoComplete
+const FormComponent = () => {
+  // text hints used for AutoComplete
   const [options, setOptions] = useState([]);
   //return a object, and it which could be set how many text hints are able to appear on screen 
   const mockVal = (str, repeat = 1) => ({
@@ -66,3 +66,5 @@ export default function FormComponent(){
       </>
     )
 }
+
+export default FormComponent

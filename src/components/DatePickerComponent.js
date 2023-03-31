@@ -1,8 +1,10 @@
 import { Button, DatePicker, Form, Input, AutoComplete } from 'antd';
 
 
-export default function DatePickerComponent(){
+const DatePickerComponent = () =>{
     return (
-        <DatePicker />
+        <DatePicker data-testid='datepicker-1'/>
     )
 }
+
+export default DatePickerComponent
